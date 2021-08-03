@@ -1,0 +1,65 @@
+
+@charset "UTF-8";
+
+*{box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+
+body{margin: 0; padding: 0; border: 0; font-family: 'notosanskr', sans-serif; font-size: 14px; color: #333;}
+/* 여백 초기화 */
+/* body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table,
+th, td, tr, textarea, button, form{ margin: 0; padding: 0;} */
+
+header, section, article, nav, aside, footer{ display: block;}
+
+
+header::after, section::after, article::after, nav::after, aside::after, footer::after{ content:""; display: block; clear:both;}
+
+
+h1,h2,h3,h4,h5,h6,p{ margin: 0;}
+
+
+ul, ol{ margin: 0; padding: 0; list-style: none;}
+
+/* a 링크 초기화 */
+a{ text-decoration: none;}
+
+
+a:focus, a:active, a:hover{ text-decoration: none;}
+
+
+table, tr, th, td { border-collapse: collapse;}
+
+/* float 후 발생하는 에러 잡기용 clear */
+/* 플롯을 준 부모의 높이(height:0)가 사라지는 현상을 막아줌! */
+.clear {clear:both;}
+
+/* 플롯준 다음 요소가 함께 플롯이 먹혀서 옆에 붙는것을 막아줌! */
+.clear:after { content:""; display:block; clear:both;}
+​
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 기본적으로 이탤릭으로 표현되는 태그들을 노멀로 변경 */
+address,cite,code,em{font-style:normal; font-weight:normal;}
+
+/* 숨김텍스트 */
+.blind{position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(1px 1px 1px 1px); /*IE6, IE7*/ clip: rect(1px, 1px, 1px, 1px);}
+
+/* 폰트초기화 */
+body, input, textarea, select, button, table{}
+
+
+
+​
+​
