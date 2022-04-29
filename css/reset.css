@@ -59,7 +59,7 @@ address,cite,code,em{font-style:normal; font-weight:normal;}
 /* 폰트초기화 */
 body, input, textarea, select, button, table{}
 
-
+button{cursor: pointer; background: transparent;}
 
 ​
 ​
