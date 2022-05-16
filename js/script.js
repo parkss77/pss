@@ -14,7 +14,7 @@ $(function() {
 
     if (typingBool == false) { // 타이핑이 진행되지 않았다면
         typingBool = true;
-        var tyInt = setInterval(typing, 100); // 반복동작
+        var tyInt = setInterval(typing, 110); // 반복동작
     }
 
     function typing() {
@@ -40,7 +40,7 @@ $(function() {
 
                 setTimeout(function() {
                     //1초후에 다시 타이핑 반복 시작
-                    tyInt = setInterval(typing, 100);
+                    tyInt = setInterval(typing, 110);
                 }, 1000);
             } else if (liIndex == liLength - 1) {
 
@@ -60,7 +60,7 @@ $(function() {
                     $(".typing ul li").html("");
 
                     //반복시작
-                    tyInt = setInterval(typing, 100);
+                    tyInt = setInterval(typing, 110);
                 }, 1000);
 
             }

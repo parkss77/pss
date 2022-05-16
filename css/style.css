@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-/* 레이아웃 공통
-html, body {position:relative; width:100%;height:100%}
-body.freeze {overflow-x:hidden; overflow-y:hidden}
-body.dimmed #header, body.dimmed #footer {z-index:auto}
-body {color:#000; font-size:14px; line-height:1.6em; font-family:'Noto Sans KR', AppleSDGothicNeo-Regular, sans-serif; word-break:break-all}
-*/
-
 /* 본문 바로가기 */
 ul.skipnav{position: relative; z-index: 2999; top:-100px; width: 100%;}
 ul.skipnav li{position: absolute; left:0; top:0; width: 100%; }
@@ -17,9 +10,10 @@ ul.skipnav li a:active{top:100px;}
 
 /* 가운데 영역 */
 .container{max-width: 1400px; height: inherit; margin: 0 auto;}
+
 @media (max-width: 1199px) {
 
-    .container{padding: 0 10px;}
+    .container{padding: 0 20px;}
 
 }
 
@@ -101,9 +95,3 @@ input[id="menuicon"]:checked ~ .header #mobile_menu .mobile_menu_main_nav{right:
 /* footer */
 #footer{background: #000;}
 .footer p{padding: 0 20px; font-size: 18px; height: 63px; line-height: 63px; text-align: center; color: #fff;}
-
-@media (max-width: 768px) {
-
-    .footer p{line-height: 1; display: table-cell; vertical-align: middle;}
-
-}

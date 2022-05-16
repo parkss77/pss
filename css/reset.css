@@ -1,65 +1,39 @@
-
 @charset "UTF-8";
 
-*{box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+*{outline: 0; -webkit-box-sizing:border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+html{-webkit-touch-callout: none; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 
-body{margin: 0; padding: 0; border: 0; font-family: 'notosanskr', sans-serif; font-size: 14px; color: #333;}
-/* 여백 초기화 */
-/* body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table,
-th, td, tr, textarea, button, form{ margin: 0; padding: 0;} */
+body{min-width: 320px; line-height: 1; word-wrap: break-word; word-break: break-all; -webkit-text-size-adjust: none;}
 
-header, section, article, nav, aside, footer{ display: block;}
-
-
-header::after, section::after, article::after, nav::after, aside::after, footer::after{ content:""; display: block; clear:both;}
-
-
-h1,h2,h3,h4,h5,h6,p{ margin: 0;}
-
-
-ul, ol{ margin: 0; padding: 0; list-style: none;}
-
-/* a 링크 초기화 */
-a{ text-decoration: none;}
-
-
-a:focus, a:active, a:hover{ text-decoration: none;}
-
-
-table, tr, th, td { border-collapse: collapse;}
-
-/* float 후 발생하는 에러 잡기용 clear */
-/* 플롯을 준 부모의 높이(height:0)가 사라지는 현상을 막아줌! */
-.clear {clear:both;}
-
-/* 플롯준 다음 요소가 함께 플롯이 먹혀서 옆에 붙는것을 막아줌! */
-.clear:after { content:""; display:block; clear:both;}
-​
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 기본적으로 이탤릭으로 표현되는 태그들을 노멀로 변경 */
-address,cite,code,em{font-style:normal; font-weight:normal;}
-
-/* 숨김텍스트 */
-.blind{position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(1px 1px 1px 1px); /*IE6, IE7*/ clip: rect(1px, 1px, 1px, 1px);}
+table {border-collapse: collapse; border-spacing: 0;}
 
 /* 폰트초기화 */
-body, input, textarea, select, button, table{}
+body, input, textarea, select, button, table{font-family: 'Noto Sans KR', sans-serif; color: #000; font-size: 16px;}
 
-button{cursor: pointer; background: transparent;}
+/* 테두리 초기화 */
+fieldset, img{border:0;}
 
-​
-​
+/* 여백초기화 */
+body, div, p, ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, table, tr, th, td,
+form, select, textarea, fieldset, legend, figure, figcaption{margin: 0; padding: 0;}
+
+/* 리스트 스타일 초기화 */
+ol, ul{list-style: none;}
+
+/* a링크 초기화 */
+a {text-decoration: none; color: #000;}
+
+/* 기본 이탤릭 체 초기화 */
+em, address {font-style: normal;}
+
+/* HTML5 태그 블록 */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}
+
+/* 폼 요소 */
+input{-webkit-appearance:none; -moz-appearance:none; appearance:none; -webkit-border-radius: 0;}
+
+.blind{position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
+.clearfix::after,
+.clearfix::before{content: ''; display: block; clear: both;}
