@@ -14,7 +14,7 @@ main{overflow: hidden;}
 }
 
 /* intro */
-#section1{height: 100vh; overflow: hidden;}
+#section1{}
 .section1{position: relative; height: 100%;}
 .section1::after{position: absolute; left:0; top:0px; display: block; content: ""; width: 100%; height: 100%; background: rgba(0,0,0,0.7);}
 .section1 video{position: relative; top: 3px; width: 100%; height: 100%; object-fit: cover;}
